@@ -21,7 +21,7 @@ else {
     }
     var upperCaseCharacters = confirm("Would you like to use Upper case Characters?");
     if (upperCaseCharacters === true){
-      choiceArray.push("A", "B", "C", "D", "E", "F", "G", "H", "I", "j", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z");
+      choiceArray.push("A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z");
     }
 
 
@@ -32,3 +32,27 @@ else {
       var passwordCharacters = getRandomCharacters();
       password = password + passwordCharacters; 
     }
+
+    console.log(password);
+
+    return password;
+  }
+
+
+  function getRandomCharacters(x) {
+    var randomIndex = Math.floor(Math.random() * choiceArray.length);
+    var randomQ = choiceArray[randomIndex];
+
+
+    return randomQ;
+  }
+}
+
+
+
+var generatePassword = document.getElementById("generate");
+generatePassword.addEventListener("click", function () {
+  var randomPassword = getRandomPassword();
+  var securePasswordElement = document.getElementById("password");
+  securePasswordElement.innerHTML = randomPassword;
+});
