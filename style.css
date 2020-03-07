@@ -21,6 +21,7 @@ body {
   padding-top: 30px;
   padding-left: 20px;
   padding-right: 20px;
+  background-color: rgb(49, 137, 153);
 }
 
 header {
@@ -30,8 +31,17 @@ header {
   color: hsl(206, 17%, 28%);
 }
 
+h1{
+  color: White;
+}
+
+h2 {
+  text-align: center;
+  color: white;
+}
+
 .card {
-  background-color: hsl(0, 0%, 100%);
+  background-color: hsl(0, 2%, 12%);
   border-radius: 5px;
   border-width: 1px;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
