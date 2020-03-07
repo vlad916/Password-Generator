@@ -23,4 +23,12 @@ else {
     if (upperCaseCharacters === true){
       choiceArray.push("A", "B", "C", "D", "E", "F", "G", "H", "I", "j", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z");
     }
-}
+
+
+    console.log(choiceArray); 
+
+
+    for (var i = 0; i < getLength; i++){
+      var passwordCharacters = getRandomCharacters();
+      password = password + passwordCharacters; 
+    }
