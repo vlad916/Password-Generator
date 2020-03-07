@@ -9,7 +9,7 @@ function getRandomPassword() {
     var password = "";
     var specialCaseCharacters = confirm("Would you like to use Special Characters?");
     if (specialCaseCharacters === true) {
-      choiceArray.push("@", "#", "$", "%", "^", "&", "*", "(", ")", "!", "-", "_", "+", "?", ",", ".", "[", "]", "{", "}", "~", ":", ";", "<", ">", "/");
+      choiceArray.push("@", "#", "$", "%", "^", "&", "*", "(", ")", "!", "-", "_", "+", "?", ",", ".", "[", "]", "{", "}", "~", ":", "/");
     }
     var numericalCaseCharacters = confirm("Would you like to use Numbers?");
     if (numericalCaseCharacters === true) {
