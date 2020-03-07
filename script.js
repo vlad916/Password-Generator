@@ -24,10 +24,10 @@ else {
       choiceArray.push("A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z");
     }
 
-
+    // This is to check if all the items are in the choiceArray
     console.log(choiceArray); 
 
-
+    // Generates a password of the length of characters from all the available characters
     for (var i = 0; i < getLength; i++){
       var passwordCharacters = getRandomCharacters();
       password = password + passwordCharacters; 
@@ -49,7 +49,7 @@ else {
 }
 
 
-
+// Created a function for the click button
 var generatePassword = document.getElementById("generate");
 generatePassword.addEventListener("click", function () {
   var randomPassword = getRandomPassword();
