@@ -7,3 +7,5 @@ This Project is about creating a Password Generator that should meet all these f
 Password Requirements:
 * Should have at least 8 characters and no more than 128 characters. 
 * Should have a lower case, upper case, special case and numerical characters. 
+
+<img src="images/password.png" text-align="center">
